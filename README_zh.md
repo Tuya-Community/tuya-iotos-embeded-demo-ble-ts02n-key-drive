@@ -1,4 +1,4 @@
-# Tuya IoTOS Embeded Demo BLE ts02n key drive
+# Tuya IoTOS Embeded Demo BLE TS02N Key Drive
 
 [English](./README.md) | [中文](./README_zh.md) 
 
@@ -6,7 +6,7 @@
 
 ## 简介 
 
-本 demo 基于涂鸦智能云平台、涂鸦智能APP、IoTOS Embeded Ble SDK，使用涂鸦BLE系列模组和ts02n触摸芯片快速实现一个触摸按键驱动。该demo提供了接口，使用者可以自行设定按键输入引脚和按键触发函数，最后使用按键注册函数注册即可使用；按键按下后按键提示灯会亮起，按键松开后提示灯关闭，触发按键回调函数会将按下的按键信息更新到手机app上。
+本 demo 基于涂鸦智能云平台、涂鸦智能APP、IoTOS Embeded Ble SDK，使用涂鸦BLE系列模组和TS02N触摸芯片快速实现一个触摸按键驱动。该demo提供了接口，使用者可以自行设定按键输入引脚和按键触发函数，最后使用按键注册函数注册即可使用；按键按下后按键提示灯会亮起，按键松开后提示灯关闭，触发按键回调函数会将按下的按键信息更新到手机app上。
 
 <br>
 
@@ -64,21 +64,21 @@
 |    ├── sdk
 |    |    └── tuya_uart_common_handler.c        /* UART通用对接实现代码 */
 |    ├── driver
-|    |    └── app_driver_ts02n_key.c            /* 按键驱动相关 */
-|    |    └── app_driver_led.c                  /* 指示灯驱动相关 */
+|    |    ├── tuya_app_driver_ts02n_key.c       /* 按键驱动相关 */
+|    |    └── tuya_app_driver_led.c             /* 指示灯驱动相关 */
 |    ├── tuya_ble_app_demo.c                    /* 应用层入口文件 */
-|    └── app_ts02n_key.c                        /* TS02N按键应用代码 */
+|    └── tuya_app_ts02n_key.c                   /* TS02N按键应用代码 */
 |
-├── include     /* 头文件目录 */
+└── include     /* 头文件目录 */
      ├── sdk
-     |    └── custom_app_uart_common_handler.h  /* UART通用对接实现代码 */
+     |    ├── custom_app_uart_common_handler.h  /* UART通用对接实现代码 */
      |    ├── custom_app_product_test.h         /* 自定义产测项目相关实现 */
      |    └── custom_tuya_ble_config.h          /* 应用配置文件 */
      ├── driver
-     |    └──app_driver_ts02n_key.h             /* 按键驱动相关 */
-     |    └──app_driver_led.h                   /* 指示灯驱动相关 */
+     |    ├── tuya_app_driver_ts02n_key.h       /* 按键驱动相关 */
+     |    └── tuya_app_driver_led.h             /* 指示灯驱动相关 */
      ├── tuya_ble_app_demo.h                    /* 应用层入口文件 */
-     └── app_ts02n_key.h                        /* TS02N按键应用代码 */
+     └── tuya_app_ts02n_key.h                   /* TS02N按键应用代码 */
 ```
 
 

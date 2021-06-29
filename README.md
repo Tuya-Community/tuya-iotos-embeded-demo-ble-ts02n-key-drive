@@ -1,4 +1,4 @@
-# Tuya IoTOS Embeded Demo BLE ts02n key drive
+# Tuya IoTOS Embeded Demo BLE TS02N Key Drive
 
 [English](./README.md) | [中文](./README_zh.md) 
 
@@ -6,7 +6,7 @@
 
 ## Introduction 
 
-This demo is based on Tuya Smart Cloud Platform, Tuya Smart APP, IoTOS Embeded Ble SDK, using Tuya BLE series modules and ts02n touch chip to quickly build a a touch key driver. The demo provides an interface, users can set the key input pin and key trigger function by themselves, and finally use the key registration function to register and use it; after the key is pressed, the key indicator light will light up, and the indicator light will turn off when the button is released. The key callback function will update the pressed key information to the mobile app.
+This demo is based on Tuya Smart Cloud Platform, Tuya Smart APP, IoTOS Embeded Ble SDK, using Tuya BLE series modules and TS02N touch chip to quickly build a a touch key driver. The demo provides an interface, users can set the key input pin and key trigger function by themselves, and finally use the key registration function to register and use it; after the key is pressed, the key indicator light will light up, and the indicator light will turn off when the button is released. The key callback function will update the pressed key information to the mobile app.
 
 <br>
 
@@ -64,21 +64,21 @@ This demo is based on Tuya Smart Cloud Platform, Tuya Smart APP, IoTOS Embeded B
 |    ├── sdk
 |    |    └── tuya_uart_common_handler.c        /* UART common handler */
 |    ├── driver
-|    |    └── app_driver_ts02n_key.c            /* key driver related */
-|    |    └── app_driver_led.c                  /* led driver related */
+|    |    ├── tuya_app_driver_ts02n_key.c       /* key driver related */
+|    |    └── tuya_app_driver_led.c             /* led driver related */
 |    ├── tuya_ble_app_demo.c                    /* application entry file */
-|    └── app_ts02n_key.c                        /* TS02N key application code */
+|    └── tuya_app_ts02n_key.c                   /* TS02N key application code */
 |
-├── include     /* header file */
+└── include     /* header file */
      ├── sdk
-     |    └── custom_app_uart_common_handler.h  /* UART common handler */
+     |    ├── custom_app_uart_common_handler.h  /* UART common handler */
      |    ├── custom_app_product_test.h         /* custom product test related */
      |    └── custom_tuya_ble_config.h          /* application config file */
      ├── driver
-     |    └──app_driver_ts02n_key.h             /* key driver related */
-     |    └──app_driver_led.h                   /* led driver related */
+     |    ├── tuya_app_driver_ts02n_key.h       /* key driver related */
+     |    └── tuya_app_driver_led.h             /* led driver related */
      ├── tuya_ble_app_demo.h                    /* application entry file */
-     └── app_ts02n_key.h                        /* TS02N key application code */
+     └── tuya_app_ts02n_key.h                   /* TS02N key application code */
 ```
 
 <br>
